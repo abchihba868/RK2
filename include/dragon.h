@@ -11,4 +11,7 @@ public:
 
     explicit Dragon(IntrinsicState const& state);
     void Print(MonsterContext const& context) const override;
+
+private:
+    IntrinsicState state_;
 };
