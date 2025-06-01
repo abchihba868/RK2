@@ -1,5 +1,5 @@
 #include "../include/dragon.h"
-
+#include <iostream>
 bool Dragon::IntrinsicState::operator<(IntrinsicState const& state) const {
     if (height < state.height) return true;
     if (height > state.height) return false;
