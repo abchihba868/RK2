@@ -10,6 +10,4 @@ public:
     virtual ~Monster() = default;
     virtual void Print(MonsterContext const& context) const = 0;
 
-private:
-    IntrinsicState state_;
 };
