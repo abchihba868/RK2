@@ -1,4 +1,5 @@
 #include "../include/slime.h"
+#include <iostream> // Добавляем явное включение
 
 bool Slime::IntrinsicState::operator<(IntrinsicState const& state) const {
     if (viscosity < state.viscosity) return true;
@@ -6,7 +7,7 @@ bool Slime::IntrinsicState::operator<(IntrinsicState const& state) const {
     return transparency < state.transparency;
 }
 
-Slime::Slime(IntrinsicState const& state) : state_(state) {}
+Slime::Slime(IntrinsicState const& state) : state_(state) {} 
 
 void Slime::Print(MonsterContext const& context) const {
     std::cout << "----- Slime -----\n"
