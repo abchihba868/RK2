@@ -1,4 +1,5 @@
 #include "../include/goblin.h"
+#include <iostream>
 
 bool Goblin::IntrinsicState::operator<(IntrinsicState const& state) const {
     if (angerDegree < state.angerDegree) return true;
