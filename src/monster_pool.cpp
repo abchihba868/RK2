@@ -1,5 +1,5 @@
 #include "../include/monster_pool.h"
-
+#include <iostream>
 template <typename MonsterType>
 MonsterType const& MonsterPool::GetImpl_(
     std::map<typename MonsterType::IntrinsicState, MonsterType>& pool,
