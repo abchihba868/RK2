@@ -1,4 +1,5 @@
 #include "../include/monster_pool.h"
+#include <iostream>
 #include <vector>
 
 struct MonsterInfo {
